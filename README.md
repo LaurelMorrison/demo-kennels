@@ -1,4 +1,4 @@
-# Description
+# Demo Kennels 
 
 Getting started with React, we built a database for shelters to track animals. This learning demo was a step-by-step introduction to the React language.
 
