@@ -1,49 +1,101 @@
 {
   "animals": [
     {
-      "id": 1,
-      "name": "Doodles",
-      "breed": "Poodle"
+      "id": 4,
+      "name": "bo",
+      "breed": "Brittany Spaniel",
+      "customerId": 2,
+      "locationId": 2
     },
     {
-      "id": 2,
-      "name": "Decker",
-      "breed": "German Shepherd"
-    },
-    {
-      "id": 3,
-      "name": "Esme",
-      "breed": "Pitbull"
-    },
-    {
-        "id": 4,
-        "name": "Bo",
-        "breed": "Brittany Spaniel"
-    },
-    {
-        "id": 5,
-        "name": "Hamlet",
-        "breed": "Mixed Breed"
+      "name": "Hamm",
+      "breed": "pig",
+      "locationId": 2,
+      "customerId": 1,
+      "id": 5
     }
   ],
   "customers": [
     {
-      "id": 1,
-      "name": "Hannah Hall",
-      "address": "7002 Chestnut Ct"
+      "name": "Calley Morrison",
+      "address": "123 Main Street",
+      "id": 2,
+      "locationId": 1,
+      "email": "calley@gmail.com",
+      "animalId": 5
+    },
+    {
+      "name": "Laurel Morrison",
+      "address": "11 stone street",
+      "email": "calley@gmail.com",
+      "animalId": 5,
+      "locationId": 2,
+      "id": 3
+    },
+    {
+      "name": "Kyle King",
+      "address": "515 Irving Street",
+      "email": "calley@gmail.com",
+      "animalId": 4,
+      "locationId": 2,
+      "id": 4
+    },
+    {
+      "email": "lbentleym1992@gmail.com",
+      "name": "Laurel Morrison",
+      "id": 5
+    },
+    {
+      "email": "lbm@lbm.com",
+      "name": "Laurel Morrison",
+      "address": "12 twelve st",
+      "id": 6
     }
   ],
-  "employees": [],
+  "employees": [
+    {
+      "name": "Laurel Morrison",
+      "address": "12 North Street",
+      "id": 1,
+      "locationId": 1
+    },
+    {
+      "name": "Kyle King",
+      "address": "34 Strawberry Street",
+      "id": 2,
+      "locationId": 1
+    },
+    {
+      "name": "Tom",
+      "address": "123 Myspace St",
+      "locationId": 2,
+      "id": 3
+    }
+  ],
   "locations": [
     {
       "id": 1,
       "name": "Nashville North",
-      "address": "8422 Johnson Pike"
+      "address": "8422 Johnson Pike",
+      "employeeId": 1
     },
     {
       "id": 2,
       "name": "Nashville South",
-      "address": "209 Emory Drive"
+      "address": "8 Octagon Square",
+      "employeeId": 2
+    },
+    {
+      "id": 3,
+      "name": "Nashville East",
+      "address": "71 Blueberry Road",
+      "employeeId": 1
+    },
+    {
+      "name": "west west nashville",
+      "address": "123 town st",
+      "employeeId": 1,
+      "id": 4
     }
   ]
 }

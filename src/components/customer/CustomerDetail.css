@@ -1,0 +1,11 @@
+#root > .customer {
+    max-width: 400px;
+    margin: 20px auto;
+    border: solid blue 3px;
+    padding: 10px;
+  }
+
+button:disabled,
+button:disabled:hover {
+  background-color: lightgray;
+}
