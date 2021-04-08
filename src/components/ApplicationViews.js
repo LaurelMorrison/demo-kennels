@@ -16,6 +16,10 @@ import { LocationForm } from './location/LocationForm';
 import { Login } from '../components/auth/Login';
 import { Register } from '../components/auth/Register';
 import { AnimalEditForm } from '../components/animal/AnimalEditForm';
+import { CustomerEditForm } from '../components/customer/CustomerEditForm';
+import { LocationEditForm } from './location/LocationEditForm.js';
+import { EmployeeEditForm } from '../components/employee/EmployeeEditForm';
+
 
 
 export const ApplicationViews = () => {
@@ -49,12 +53,16 @@ export const ApplicationViews = () => {
                 <AnimalForm />
             </Route>
 
+            <Route path="/animals/:animalId(\d+)/edit">
+             <AnimalEditForm />
+            </Route>
+
             <Route exact path="/employees">
                 <EmployeeList />
             </Route>
 
 
-            <Route path="/employees/:employeeId(\d+)">
+            <Route exact path="/employees/:employeeId(\d+)">
                 <EmployeeDetail />
             </Route>
 
@@ -62,11 +70,15 @@ export const ApplicationViews = () => {
                 <EmployeeForm />
             </Route>
 
+            <Route path="/employees/:employeeId(\d+)/edit">
+             <EmployeeEditForm />
+            </Route>
+
             <Route exact path="/customers">
                 <CustomerList />
             </Route>
 
-            <Route path="/customers/:customerId(\d+)">
+            <Route exact path="/customers/:customerId(\d+)">
                 <CustomerDetail />
             </Route>
 
@@ -75,12 +87,15 @@ export const ApplicationViews = () => {
                 <CustomerForm />
             </Route>
 
+            <Route path="/customers/:customerId(\d+)/edit">
+             <CustomerEditForm />
+            </Route>
 
             <Route exact path="/locations">
                 <LocationList />
             </Route>
 
-            <Route path="/locations/:locationId(\d+)">
+            <Route exact path="/locations/:locationId(\d+)">
                 <LocationDetail />
             </Route>
 
@@ -88,17 +103,10 @@ export const ApplicationViews = () => {
                 <LocationForm />
             </Route>
 
-            <Route path="/animals/:animalId(\d+)/edit">
-             <AnimalEditForm />
+            <Route path="/locations/:locationId(\d+)/edit">
+                <LocationEditForm />
             </Route>
 
-            {/* <Route exact path="/animals/:animalId(\d+)">
-                if (isAuthenticated()) {
-                return <AnimalDetail />
-                } else {
-                return <Redirect to="/login" />
-                 }
-                </Route> */}
         </>
     )
 }

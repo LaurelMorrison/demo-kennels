@@ -2,10 +2,10 @@
   "animals": [
     {
       "id": 4,
-      "name": "bo",
+      "name": "bo bo",
       "breed": "Brittany Spaniel",
-      "customerId": 2,
-      "locationId": 2
+      "locationId": 4,
+      "customerId": 2
     },
     {
       "name": "Hamm",

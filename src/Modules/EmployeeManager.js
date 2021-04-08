@@ -26,3 +26,13 @@ export const addEmployee = (newEmployee) => {
         body: JSON.stringify(newEmployee)
     }).then(response => response.json())
 }
+
+export const updateEmployee = (editedEmployee) => {
+    return fetch(`${employeeURL}/employees/${editedEmployee.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(editedEmployee),
+    }).then((data) => data.json());
+  };
