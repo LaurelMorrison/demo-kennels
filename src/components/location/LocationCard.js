@@ -1,9 +1,16 @@
 import React from "react"
 import "./Location.css"
+import { Link } from "react-router-dom"
 
-export const LocationCard = () => (
-    <section className="location">
-        <h3 className="location__name">Nashville Humane Society</h3>
-        <div className="location__address">Address: 123 Main Street</div>
-    </section>
+export const LocationCard = ({location, handleDeleteLocation}) => (
+    <div className="card">
+        <div className="card-content">
+        <h3 className="content-locationname">Name: {location.name}</h3>
+        <p className="location__address">Address: {location.address}</p>
+        <Link to={`/locations/${location.id}`}>
+                <button>Details</button>
+            </Link>
+        <button type="button" onClick={() => handleDeleteLocation(location.id)}>Delete</button>
+        </div>
+    </div>
 )
