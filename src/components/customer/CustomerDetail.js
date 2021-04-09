@@ -5,7 +5,7 @@ import { useParams, useHistory } from "react-router-dom";
 
 export const CustomerDetail = () => {
     const [customer, setCustomer] = useState({});
-    const [isLoading, setIsLoading] =useState(true)
+    const [setIsLoading] =useState(true)
     const {customerId} = useParams();
     const history = useHistory();
 
@@ -35,7 +35,7 @@ export const CustomerDetail = () => {
             <div className="customer__address">Address: {customer.address}</div>   
             <div className="customer__location">Shelter: {customer.location?.name}</div>
             <div className="customer__animal">Pet: {customer.animal?.name}</div>
-            <button type="button" disabled={isLoading} onClick={handleDelete}>Delete</button>
+            <button type="button" onClick={handleDelete}>Delete</button>
         </section>    
     )
 }

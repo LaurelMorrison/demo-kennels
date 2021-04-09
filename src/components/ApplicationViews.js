@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Redirect } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { Home } from "./Home";
 import { AnimalList } from "./animal/AnimalList";
 import { CustomerList } from "./customer/CustomerList";
@@ -22,8 +22,7 @@ import { EmployeeEditForm } from '../components/employee/EmployeeEditForm';
 
 
 
-export const ApplicationViews = () => {
-    const isAuthenticated = () => sessionStorage.getItem("kennel_customer") !== null;
+export const ApplicationViews = ({setAuthUser}) => {
 
     return (
         <>
@@ -34,15 +33,15 @@ export const ApplicationViews = () => {
 
             {/* Render the animal list when http://localhost:3000/animals */}
             <Route exact path="/animals">
-                {isAuthenticated() ? <AnimalList /> : <Redirect to="/login" />}
+                <AnimalList />
             </Route>
 
             <Route path="/login">
-                <Login />
+                <Login setAuthUser={setAuthUser} />
             </Route>
 
             <Route path="/register">
-                <Register />
+                <Register setAuthUser={setAuthUser} />
             </Route>
 
             <Route exact path="/animals/:animalId(\d+)">

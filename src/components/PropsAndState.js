@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-export const PropsAndState = ({ yourName }) => {
+export const ç = ({ yourName }) => {
   let [countClicks, setCountClicks] = useState(0)
 
   const handleClick = () => {

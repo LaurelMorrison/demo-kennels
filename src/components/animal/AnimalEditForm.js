@@ -46,6 +46,7 @@ export const AnimalEditForm = () => {
       id: animalId,
       name: animal.name,
       breed: animal.breed,
+      image: animal.image,
       locationId: animal.locationId,
       customerId: animal.customerId
     };
@@ -86,6 +87,16 @@ export const AnimalEditForm = () => {
               value={animal.breed}
             />
             <label htmlFor="breed">Breed</label>
+
+            <input
+              type="text"
+              required
+              className="form-control"
+              onChange={handleFieldChange}
+              id="image"
+              value={animal.image}
+            />
+            <label htmlFor="image">Image</label>
           </div>
           <fieldset>
             <div className="form-group">
