@@ -9,6 +9,7 @@ export const LocationForm = () => {
 	const [location, setLocation] = useState({
 		name: "",
 		address: "",
+		hours: "",
 		employeeId: 0
 	});
 
@@ -64,6 +65,12 @@ export const LocationForm = () => {
 				<div className="form-group">
 					<label htmlFor="address">Shelter Address:</label>
 					<input type="text" id="address" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Location Address" value={location.address} />
+				</div>
+			</fieldset>
+			<fieldset>
+				<div className="form-group">
+					<label htmlFor="hours">Shelter Hours:</label>
+					<input type="text" id="hours" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Location Hours" value={location.hours} />
 				</div>
 			</fieldset>
 			<fieldset>

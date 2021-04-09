@@ -38,6 +38,7 @@ export const LocationEditForm = () => {
     const editedLocation = {
       id: locationId,
       name: location.name,
+      hours: location.hours,
       address: location.address,
       employeeId: location.employeeId
     };
@@ -78,6 +79,16 @@ export const LocationEditForm = () => {
               value={location.address}
             />
             <label htmlFor="address">Address</label>
+
+            <input
+              type="text"
+              required
+              className="form-control"
+              onChange={handleFieldChange}
+              id="hours"
+              value={location.hours}
+            />
+            <label htmlFor="hours">Hours</label>
           </div>
           <fieldset>
             <div className="form-group">

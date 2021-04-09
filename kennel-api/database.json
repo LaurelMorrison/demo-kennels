@@ -1,101 +1,147 @@
 {
   "animals": [
     {
-      "id": 4,
-      "name": "bo bo",
-      "breed": "Brittany Spaniel",
+      "id": 6,
+      "name": "ham",
+      "breed": "mixed breed",
+      "image": "https://media.giphy.com/media/kiBcwEXegBTACmVOnE/giphy.gif",
       "locationId": 4,
-      "customerId": 2
+      "customerId": 7
     },
     {
-      "name": "Hamm",
-      "breed": "pig",
-      "locationId": 2,
-      "customerId": 1,
-      "id": 5
+      "id": 7,
+      "name": "bo bo",
+      "breed": "brittany spaniel",
+      "image": "https://media.giphy.com/media/QvBoMEcQ7DQXK/giphy.gif",
+      "locationId": 5,
+      "customerId": 9
+    },
+    {
+      "id": 8,
+      "name": "brutus",
+      "breed": "hound",
+      "image": "https://media.giphy.com/media/yvgaJzI8Q01Ow/giphy.gif",
+      "locationId": 5,
+      "customerId": 7
+    },
+    {
+      "name": "Tommy Boy",
+      "breed": "Poodle",
+      "image": "https://media.giphy.com/media/ghAbYUswkmXHq/giphy.gif",
+      "locationId": 5,
+      "customerId": 8,
+      "id": 9
+    },
+    {
+      "name": "Gus",
+      "breed": "Pug",
+      "image": "https://media.giphy.com/media/BHBfjYUsL6hag/giphy.gif",
+      "locationId": 4,
+      "customerId": 10,
+      "id": 10
+    },
+    {
+      "name": "Tom",
+      "breed": "Terrier",
+      "image": "https://media.giphy.com/media/2yWxpmYVjpVQY/giphy.gif",
+      "locationId": 4,
+      "customerId": 7,
+      "id": 11
     }
   ],
   "customers": [
     {
-      "name": "Calley Morrison",
-      "address": "123 Main Street",
-      "id": 2,
-      "locationId": 1,
-      "email": "calley@gmail.com",
-      "animalId": 5
-    },
-    {
-      "name": "Laurel Morrison",
-      "address": "11 stone street",
-      "email": "calley@gmail.com",
-      "animalId": 5,
-      "locationId": 2,
-      "id": 3
-    },
-    {
-      "name": "Kyle King",
-      "address": "515 Irving Street",
-      "email": "calley@gmail.com",
-      "animalId": 4,
-      "locationId": 2,
-      "id": 4
-    },
-    {
-      "email": "lbentleym1992@gmail.com",
-      "name": "Laurel Morrison",
-      "id": 5
-    },
-    {
       "email": "lbm@lbm.com",
       "name": "Laurel Morrison",
       "address": "12 twelve st",
-      "id": 6
+      "animalId": 7,
+      "locationId": 4,
+      "id": 7
+    },
+    {
+      "name": "Kyle King",
+      "address": "123 number st",
+      "animalId": 7,
+      "locationId": 4,
+      "id": 12
+    },
+    {
+      "email": "style@harry.com",
+      "name": "Harry Styles",
+      "id": 8,
+      "animalId": 7,
+      "locationId": 4
+    },
+    {
+      "email": "baba@sheep",
+      "name": "Harry sheep",
+      "id": 9,
+      "animalId": 7,
+      "locationId": 4
+    },
+    {
+      "email": "tat@tat.com",
+      "name": "tat tat",
+      "id": 10,
+      "animalId": 7,
+      "locationId": 4
+    },
+    {
+      "name": "Tom",
+      "address": "1 Tom Street",
+      "animalId": 11,
+      "locationId": 6,
+      "id": 11
     }
   ],
   "employees": [
     {
+      "id": 1,
       "name": "Laurel Morrison",
       "address": "12 North Street",
-      "id": 1,
-      "locationId": 1
+      "locationId": 4
     },
     {
       "name": "Kyle King",
-      "address": "34 Strawberry Street",
-      "id": 2,
-      "locationId": 1
+      "address": "1 street",
+      "locationId": 4,
+      "id": 2
     },
     {
-      "name": "Tom",
-      "address": "123 Myspace St",
-      "locationId": 2,
+      "name": "Mario",
+      "address": "Luigi@kart.com",
+      "locationId": 4,
       "id": 3
     }
   ],
   "locations": [
     {
-      "id": 1,
-      "name": "Nashville North",
-      "address": "8422 Johnson Pike",
-      "employeeId": 1
-    },
-    {
-      "id": 2,
-      "name": "Nashville South",
-      "address": "8 Octagon Square",
-      "employeeId": 2
-    },
-    {
       "id": 3,
       "name": "Nashville East",
+      "hours": "Monday-Friday between 9am-5pm",
       "address": "71 Blueberry Road",
-      "employeeId": 1
+      "employeeId": 2
     },
     {
       "name": "west west nashville",
       "address": "123 town st",
       "employeeId": 1,
-      "id": 4
+      "id": 4,
+      "hours": "Monday-Saturday between 8am-4:30pm"
+    },
+    {
+      "name": "Nashville North",
+      "address": "1 North St",
+      "employeeId": 1,
+      "id": 5,
+      "hours": "Monday-Friday between 9am-4:30pm"
+    },
+    {
+      "name": "Nashville Central",
+      "address": "1 Center St",
+      "hours": "Monday-Wednesday between 8am-6pm",
+      "employeeId": 2,
+      "id": 6
     }
   ]
 }

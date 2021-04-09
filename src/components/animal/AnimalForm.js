@@ -12,6 +12,7 @@ export const AnimalForm = () => {
 	const [animal, setAnimal] = useState({
 		name: "",
 		breed: "",
+		image: "",
 		locationId: 0,
 		customerId: 0
 	});
@@ -63,7 +64,6 @@ export const AnimalForm = () => {
 
 	const handleClickSaveAnimal = (event) => {
 		event.preventDefault() //Prevents the browser from submitting the form
-
 		const locationId = animal.locationId
 		const customerId = animal.customerId
 
@@ -90,6 +90,12 @@ export const AnimalForm = () => {
 				<div className="form-group">
 					<label htmlFor="breed">Animal breed:</label>
 					<input type="text" id="breed" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Animal breed" value={animal.breed} />
+				</div>
+			</fieldset>
+			<fieldset>
+				<div className="form-group">
+					<label htmlFor="image">Animal Image:</label>
+					<input type="text" id="image" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Animal image" value={animal.image} />
 				</div>
 			</fieldset>
 			<fieldset>

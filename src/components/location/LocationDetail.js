@@ -16,6 +16,7 @@ export const LocationDetail = () => {
             setLocation({
                 name: location.name,
                 address: location.address,
+                hours: location.hours,
                 employee: location.employee
             })
             setIsLoading(false)
@@ -32,6 +33,7 @@ export const LocationDetail = () => {
         <section className="location">
             <h3 className="location__name">Name: {location.name}</h3>
             <div className="location__address">Address: {location.address}</div>
+            <div className="location__hours">Hours: {location.hours}</div>
             <div className="location__employee">Employee: {location.employee?.name}</div>
             <button type="button" disabled={isLoading} onClick={handleDelete}>Delete</button>
         </section>

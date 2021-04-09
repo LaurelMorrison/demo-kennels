@@ -45,3 +45,8 @@
   .card button:hover {
     background-color: darkblue;
   }
+
+  .postImage{
+    height: 150px;
+    width: 150px;
+  }
